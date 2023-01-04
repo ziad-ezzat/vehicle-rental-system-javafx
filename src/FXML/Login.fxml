@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="50.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leasing Vehicles">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="74.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="61.0">
+               <image>
+                  <Image url="@../rersources/cc.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="password" layoutX="42.0" layoutY="315.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="username" layoutX="42.0" layoutY="258.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="123.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #0598ff;" text="Login" textFill="#fafafa" />
+            <Hyperlink layoutX="126.0" layoutY="462.0" text="Forgot your password?" />
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../rersources/login_icon.jpeg" />
+               </image></ImageView>
+            <RadioButton layoutX="30.0" layoutY="199.0" mnemonicParsing="false" text="Admin">
+               <toggleGroup>
+                  <ToggleGroup fx:id="select" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="customer" layoutX="201.0" layoutY="200.0" mnemonicParsing="false" text="Customer" toggleGroup="$select" />
+            <RadioButton fx:id="Owner" layoutX="117.0" layoutY="200.0" mnemonicParsing="false" text="Owner" toggleGroup="$select" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

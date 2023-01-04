@@ -1,0 +1,38 @@
+CREATE DATABASE myproject;
+USE myproject;
+CREATE TABLE Customer(
+    username varchar(255),
+    password varchar(25) PRIMARY KEY
+);
+CREATE TABLE Owner(
+    username varchar(255),
+    password varchar(25) PRIMARY KEY
+);
+CREATE TABLE Admin(
+    username varchar(255),
+    password varchar(25) PRIMARY KEY
+);
+CREATE TABLE waitlist(
+    veID INT AUTO_INCREMENT PRIMARY KEY,
+    type varchar(25),
+    moudel varchar(20),
+    avalible varchar(50),
+    salary INT
+);
+CREATE TABLE vehicles(
+    veID INT AUTO_INCREMENT PRIMARY KEY,
+    type varchar(25),
+    moudel varchar(20),
+    avalible varchar(50),
+    salary INT
+);
+INSERT INTO Customer(username,password)   
+VALUES ('ziad','1234');
+INSERT INTO owner(username,password)   
+VALUES ('sama','0000');
+INSERT INTO admin(username,password)   
+VALUES ('rahma','5678');
+INSERT INTO vehicles(veID ,type,moudel,avalible,salary)   
+VALUES (1,'car','bmw','5/9/2022',6000);
+INSERT INTO waitlist(veID ,type,moudel,avalible,salary)   
+VALUES (2,'car','honda','5/11/2022',7000);

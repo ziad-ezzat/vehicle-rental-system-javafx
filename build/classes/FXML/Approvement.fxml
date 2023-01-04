@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ApprovementController">
+   <children>
+      <HBox layoutY="43.0" prefHeight="118.0" prefWidth="601.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../rersources/car1.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="showtext" editable="false" prefHeight="93.0" prefWidth="419.0" text="car No : nb151&#10;type : uhvtfug&#10;moudle : ihgjk2002&#10;ava : sdjnsb6516&#10;mnb : jhugt7&#10;&#10;&#10;" wrapText="true">
+
+                     <font>
+                        <Font name="Calisto MT" size="14.0" />
+                     </font>
+                  </TextArea>
+         </children>
+      </HBox>
+      <Button layoutX="110.0" layoutY="269.0" mnemonicParsing="false" onAction="#accept" prefHeight="54.0" prefWidth="77.0" text="Accept">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="479.0" layoutY="254.0" mnemonicParsing="false" onAction="#check" prefHeight="54.0" prefWidth="77.0" text="check">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="-1.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="67.0" text="&lt;--" />
+      <TextField fx:id="id" layoutX="500.0" layoutY="200.0" prefHeight="28.0" prefWidth="34.0" />
+      <Label layoutX="448.0" layoutY="206.0" text="enter id " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="project.jnlp">
+  <information>
+    <title>project</title>
+    <vendor>Mega Store</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-j-8.0.31.jar" size="2515519" download="eager" />
+    <jar href="project.jar" size="439645" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="project.App"  name="project" />
+  <update check="always"/>
+</jnlp>

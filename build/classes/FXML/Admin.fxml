@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.adminController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="14.0" prefHeight="102.0" prefWidth="215.0" text="Admin Page" underline="true">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="46.0" layoutY="250.0" mnemonicParsing="false" onAction="#moveToApprovement" prefHeight="60.0" prefWidth="170.0" text="Approve Posts">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="264.0" layoutY="250.0" mnemonicParsing="false" onAction="#moveTOHome" prefHeight="60.0" prefWidth="170.0" text="Home">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="481.0" layoutY="250.0" mnemonicParsing="false" onAction="#choose" prefHeight="60.0" prefWidth="170.0" text="Create new User">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="54.0" text="&lt;--" />
+   </children>
+</AnchorPane>
